@@ -1,9 +1,17 @@
-The purpose of this Perl 5 / CPAN app is to generate
-[SVGs](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) (=
-a standardised XML-based vector graphics file format) containing a
-graph/chart of numeric data from the command line. It accepts
-[TSV (tab-separated values)](https://en.wikipedia.org/wiki/Tab-separated_values)
-as input, but support for different formats may be added in the future.
+The purpose of this Perl 5 / CPAN command-line app is to perform
+a simple [arithmetic sum](https://en.wikipedia.org/wiki/Addition) of
+a stream of decimal [bigints](https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic),
+each given as a string on a single line, and output the sum.
+
+For example:
+
+```
+$ (echo 1 ; echo 24 ; echo 900) | intsum
+925
+```
+
+I have written various variations of this task several times and decided I
+should use something common once and for all.
 
 # Screenshots
 
@@ -15,12 +23,11 @@ as input, but support for different formats may be added in the future.
 
 # Licence
 
-svg-graph is open source under the permissive MIT/Expat licence.
+intsum is open source under the permissive MIT/Expat licence.
 
 # SEE ALSO
 
-- [MetaCPAN Page](https://metacpan.org/release/App-SVG-Graph)
-- [victory-cli](https://github.com/FormidableLabs/victory-cli) - a similar tool
+- [MetaCPAN Page](https://metacpan.org/release/App-intsum)
 written in Node.js/npm.
 - [“Directory of Numerical Software”](http://www.shlomifish.org/open-source/resources/numerical-software/) - on Shlomi Fish’s web site and under CC-by.
 
@@ -28,9 +35,4 @@ written in Node.js/npm.
 
 - Thanks to [Sawyer X](http://blogs.perl.org/users/sawyer_x/) for telling me
 why CPAN authors should write more command line applications.
-- Thanks to the authors of [SVG::Graph](https://metacpan.org/release/SVG-Graph)
-and [SVG::Graph::Kit](https://metacpan.org/release/SVG-Graph-Kit) which this
-code makes use of.
-- Thanks to Nadim, Nadav, Amadiro, jasondockers and Dark_Fox for some
-commentary on early versions of this tool.
-
+- Thanks for "sir galahad" for motivating me to write this.
