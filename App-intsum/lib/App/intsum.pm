@@ -44,7 +44,17 @@ __END__
 
 =head1 NAME
 
-App::intsum - sums decimals big integers from stdin or files - one in each line.
+App::intsum - sums decimal big integers from stdin or files - one in each line.
+
+=head1 SYNOPSIS
+
+    $ (echo 2 ; echo 3) | intsum
+    5
+
+=head1 DESCRIPTION
+
+Performs an arithmetic sum of decimal integers in the files given as command
+line arguments and STDIN.
 
 =head1 VERSION
 
