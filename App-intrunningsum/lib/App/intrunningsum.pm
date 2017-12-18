@@ -30,10 +30,8 @@ sub run
     while (my $l = <ARGV>)
     {
         chomp$l;
-        $s += Math::GMP->new($l);
+        print (($s += Math::GMP->new($l)), "\n");
     }
-
-    print "$s\n";
 
     return;
 }
