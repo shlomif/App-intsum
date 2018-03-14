@@ -13,13 +13,7 @@ $ (echo 1 ; echo 24 ; echo 900) | intsum
 I have written various variations of this task several times and decided I
 should use something common once and for all.
 
-# Screenshots
-
-![Image](<http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png>)
-
 # Badges
-
-[![Build Status](https://travis-ci.org/shlomif/perl-App-SVG-Graph.svg?branch=master)](https://travis-ci.org/shlomif/perl-App-SVG-Graph)
 
 # Licence
 
@@ -28,7 +22,6 @@ intsum is open source under the permissive MIT/Expat licence.
 # SEE ALSO
 
 - [MetaCPAN Page](https://metacpan.org/release/App-intsum)
-written in Node.js/npm.
 - [“Directory of Numerical Software”](http://www.shlomifish.org/open-source/resources/numerical-software/) - on Shlomi Fish’s web site and under CC-by.
 
 # THANKS
