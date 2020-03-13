@@ -30,7 +30,7 @@ sub run
     while ( my $l = <ARGV> )
     {
         chomp $l;
-        if ( my ($diff) = ( $l =~ m#\A([0-9]+)(?:\s|\Z)# ) )
+        if ( my ($diff) = ( $l =~ m#\A([0-9]+)(?=\s|\Z)# ) )
         {
             printf( "%s\t%s\n", ( $s += Math::GMP->new($diff) ), $l );
         }
