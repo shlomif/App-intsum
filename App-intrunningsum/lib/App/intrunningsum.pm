@@ -18,7 +18,7 @@ sub new
 
 sub _init
 {
-    my ($self, $args) = @_;
+    my ( $self, $args ) = @_;
 
     return;
 }
@@ -27,10 +27,10 @@ sub run
 {
     my $s = Math::GMP->new('0');
 
-    while (my $l = <ARGV>)
+    while ( my $l = <ARGV> )
     {
-        chomp$l;
-        print (($s += Math::GMP->new($l)), "\n");
+        chomp $l;
+        print( ( $s += Math::GMP->new($l) ), "\n" );
     }
 
     return;
